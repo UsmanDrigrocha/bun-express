@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "buildCommand": "bun build src/server.ts --bundle --outfile=dist/server.js --target=node",
+  "routes": [
+    { "src": "/(.*)", "dest": "dist/server.js" }
+  ]
+}
